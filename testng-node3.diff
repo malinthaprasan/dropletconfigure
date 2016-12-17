@@ -1,0 +1,47 @@
+diff --git a/modules/integration/tests-integration/tests-backend/src/test/resources/testng.xml b/modules/integration/tests-integration/tests-backend/src/test/resources/testng.xml
+index 331a645..ae735fe 100755
+--- a/modules/integration/tests-integration/tests-backend/src/test/resources/testng.xml
++++ b/modules/integration/tests-integration/tests-backend/src/test/resources/testng.xml
+@@ -23,7 +23,7 @@
+     <parameter name="useDefaultListeners" value="false"/>
+ 
+ 
+-    <test name="apim-integration-tests-api-lifecycle" preserve-order="true" parallel="false">
++    <test name="apim-integration-tests-api-lifecycle" preserve-order="true" parallel="false" enabled="false">
+         <classes>
+             <class name="org.wso2.am.integration.tests.other.APIStateChangeWorkflowTestCase"/>
+             <class name="org.wso2.am.integration.tests.api.lifecycle.AccessibilityOfBlockAPITestCase"/>
+@@ -72,7 +72,7 @@
+     </test>
+ 
+ 
+-    <test name="apim-throttling-tests" preserve-order="true" parallel="false">
++    <test name="apim-throttling-tests" preserve-order="true" parallel="false"  enabled="false">
+         <classes>
+             <class name="org.wso2.am.integration.tests.throttling.AdvancedThrottlingConfig"/>
+             <class name="org.wso2.am.integration.tests.api.lifecycle.ChangeAPITierAndTestInvokingTestCase"/>
+@@ -82,13 +82,13 @@
+         </classes>
+     </test>
+ 
+-    <test name="apim-CORS-tests" preserve-order="true" parallel="false">
++    <test name="apim-CORS-tests" preserve-order="true" parallel="false"  enabled="false">
+         <classes>
+             <class name="org.wso2.am.integration.tests.header.CORSAccessControlAllowCredentialsHeaderTestCase"/>
+         </classes>
+     </test>
+ 
+-    <test name="apim-integration-tests-samples" preserve-order="true" parallel="false">
++    <test name="apim-integration-tests-samples" preserve-order="true" parallel="false" enabled="false">
+         <classes>
+             <class name="org.wso2.am.integration.tests.other.APIInvocationFailureTestCase"/>
+             <class name="org.wso2.am.integration.tests.resources.APIResourceModificationTestCase"/>
+@@ -132,7 +132,7 @@
+         </classes>
+     </test>
+ 
+-    <test name="apim-publisher-tests" preserve-order="true" parallel="false">
++    <test name="apim-publisher-tests" preserve-order="true" parallel="false" enabled="false">
+ 
+         <classes>
+             <class name="org.wso2.am.integration.tests.prototype.APIM23VisibilityOfPrototypedAPIInStoreTestCase"/>

@@ -1,0 +1,55 @@
+diff --git a/modules/integration/tests-integration/tests-backend/src/test/resources/testng.xml b/modules/integration/tests-integration/tests-backend/src/test/resources/testng.xml
+index 331a645..0cf79c6 100755
+--- a/modules/integration/tests-integration/tests-backend/src/test/resources/testng.xml
++++ b/modules/integration/tests-integration/tests-backend/src/test/resources/testng.xml
+@@ -88,7 +88,7 @@
+         </classes>
+     </test>
+ 
+-    <test name="apim-integration-tests-samples" preserve-order="true" parallel="false">
++    <test name="apim-integration-tests-samples" preserve-order="true" parallel="false" enabled="false">
+         <classes>
+             <class name="org.wso2.am.integration.tests.other.APIInvocationFailureTestCase"/>
+             <class name="org.wso2.am.integration.tests.resources.APIResourceModificationTestCase"/>
+@@ -132,7 +132,7 @@
+         </classes>
+     </test>
+ 
+-    <test name="apim-publisher-tests" preserve-order="true" parallel="false">
++    <test name="apim-publisher-tests" preserve-order="true" parallel="false" enabled="false">
+ 
+         <classes>
+             <class name="org.wso2.am.integration.tests.prototype.APIM23VisibilityOfPrototypedAPIInStoreTestCase"/>
+@@ -161,7 +161,7 @@
+     </test>
+ 
+ 
+-    <test name="apim-store-tests" preserve-order="true" parallel="false">
++    <test name="apim-store-tests" preserve-order="true" parallel="false" enabled="false">
+         <classes>
+             <class name="org.wso2.am.integration.tests.other.APIM710AllSubscriptionsByApplicationTestCase"/>
+             <class name="org.wso2.am.integration.tests.other.CopyNewVersionTestCase"/>
+@@ -191,7 +191,7 @@
+         </classes>
+     </test>
+ 
+-    <test name="rest-api-tests" preserve-order="true" parallel="false">
++    <test name="rest-api-tests" preserve-order="true" parallel="false" enabled="false">
+         <classes>
+             <!-- Following two test cases should be uncommented only when APIM is released under a kernel version which have
+             CARBON-15759 and ESBJAVA-4386 fixed -->
+@@ -208,12 +208,12 @@
+             <class name="org.wso2.am.integration.tests.restapi.testcases.APIMANAGER4877CreateAPIWithScopesAndUpdateTemplateTestCase"/>
+         </classes>
+     </test>
+-    <test name="apim-mediation-tests" preserve-order="true" parallel="false">
++    <test name="apim-mediation-tests" preserve-order="true" parallel="false" enabled="false">
+         <classes>
+             <class name="org.wso2.am.integration.tests.api.lifecycle.AddNewMediationAndInvokeAPITestCase"/>
+         </classes>
+     </test>
+-    <test name="apim-websocket-tests" preserve-order="true" parallel="false">
++    <test name="apim-websocket-tests" preserve-order="true" parallel="false" enabled="false">
+         <classes>
+             <class name="org.wso2.am.integration.tests.websocket.WebSocketAPITestCase"/>
+         </classes>
