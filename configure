@@ -1,0 +1,4 @@
+#!/bin/bash
+git clone https://github.com/malinthaprasan/linux-scripts /root/linux-scripts
+cp profile /etc/profile
+. /etc/profile
