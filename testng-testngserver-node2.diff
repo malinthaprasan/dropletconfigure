@@ -1,3 +1,16 @@
+diff --git a/modules/integration/tests-integration/tests-backend/src/test/resources/testng-server-mgt.xml b/modules/integration/tests-integration/tests-backend/src/test/resources/testng-server-mgt.xml
+index 1754d9f..a8ccd42 100644
+--- a/modules/integration/tests-integration/tests-backend/src/test/resources/testng-server-mgt.xml
++++ b/modules/integration/tests-integration/tests-backend/src/test/resources/testng-server-mgt.xml
+@@ -17,7 +17,7 @@
+         </classes>
+     </test>
+ 
+-    <test name="apim-startup-tests" preserve-order="true" parallel="false">
++    <test name="apim-startup-tests" preserve-order="true" parallel="false" enabled="false">
+         <classes>
+             <class name="org.wso2.am.integration.tests.server.mgt.APIMgtServerStartupTestCase"/>
+             <class name="org.wso2.am.integration.tests.server.mgt.OSGIServerBundleStatusTestCase"/>
 diff --git a/modules/integration/tests-integration/tests-backend/src/test/resources/testng.xml b/modules/integration/tests-integration/tests-backend/src/test/resources/testng.xml
 index 331a645..cac4703 100755
 --- a/modules/integration/tests-integration/tests-backend/src/test/resources/testng.xml
